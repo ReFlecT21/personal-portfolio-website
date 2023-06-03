@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title></title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+  
+    <link href="fontawesome/css/fontawesome.css" rel="stylesheet">
+  <link href="fontawesome/css/brands.css" rel="stylesheet">
+  <link href="fontawesome/css/solid.css" rel="stylesheet">
+  
+ </head>
+
+  <body>
+    <div id="loading-screen">
+        <div class="spinner" id="spinner"></div>
+      </div>
+      <a href="#" id="scrollToTopBtn" title="Scroll to Top">
+        <svg class="circle">
+          <circle class="circle-bg" cx="20" cy="20" r="16"></circle>
+          <circle class="circle-fill" cx="20" cy="20" r="16"></circle>
+        </svg>
+        <span class="arrow"></span>
+      </a>
+    <section id="home">
+      <img class="back" src="images/back2.png" >
+      
+          <nav id="nav" class="nav__">
+            
+              <img id="logo" class="logo" src="images/logo.png">
+              <ul id="dropmenu">
+                  <li><a href="#home" class="active">Home</a></li>
+                  <li><a href="#about" >About</a></li>
+                  <li><a href="#exp">Experience</a></li>
+                  <li><a href="#projects">Projects</a></li>
+                  <li><a href="#contact">Contact</a></li>
+                  
+              </ul>
+              <input type="checkbox" id="checkbox" onclick="dropmenu()">
+              <label for="checkbox" class="toggle" id="toggle">
+                  <div class="bars" id="bar1"></div>
+                  <div class="bars" id="bar2"></div>
+                  <div class="bars" id="bar3"></div>
+              </label>
+          
+          </nav>
+        
+          <!-- update this header-text -->
+         
+          <div id="yo" class="header-text">
+              
+              <h1><span class="hello">Hello,</span><br> I'm <span class="guru">Guru<span class="exclaim">!</span></h1>
+              <div class="logos">
+                  <div class="header-icons">
+                      <span class="tooltip">LinkedIn</span>
+                      <span>
+                        <a href="https://www.linkedin.com/in/kumara-gurus/" target="_blank" class="icon"><i class="fa-brands fa-linkedin-in"></i></a>
+                        
+                      </span>
+                      
+                  </div>
+                  <div class="header-icons">
+                      <span class="tooltip">Instagram</span>
+                      <span>
+                          <a href="https://www.instagram.com/guruboy21/" target="_blank" class="icon"><i class="fa-brands fa-instagram"></i></a>
+                      </span>
+                  </div>
+                  <div class="header-icons">
+                      <span class="tooltip" >Github</span>
+                      <span>
+                          <a href="https://github.com/ReFlecT21" target="_blank" class="icon"><i class="fa-brands fa-github"></i></a>
+                      </span>
+                  </div>
+              </div>
+              <div class="header-btn">
+                  <a href="#about" class="btn">About</a>
+              <a href="#projects" class="btn">Latest Projects</a>
+              </div>
+              
+          </div>
+        </section>
+     
+  
+  <!-- ABOUT -->
+<section id="about">
+  <div class="container">
+      <h1>About Me</h1>
+      <p class="about-text">My goal is to use my skills and knowledge to create innovative solutions that make a positive impact on society. I'm excited to see where my journey in IT will take me and eager to connect with other like-minded individuals who share my passion for technology.</p>
+          <div class="tab-titles">
+              <p class="tab-links active-link" onclick="somFunc()"><b>Skills</b></p>
+              <p class="tab-links" onclick="opentab('Education')"><b>Education</b></p>
+              <p class="tab-links" onclick="opentab('Achievements')"><b>Achievements</b></p>
+
+             
+          </div>
+          <div class="tab-contents active-tab" id="skills">
+          <div class="skill">
+              <!-- add my own shit here  -->
+              <div class="outer">
+              
+                  <div class="inner">
+                      <div id="python">
+                       
+                      </div>
+                  </div>
+                  <div class="type">
+                      PYTHON
+                  </div>
+              </div>
+             
+              <svg  xmlns="http://www.w3.org/2000/svg" version="1.1" width="160px" height="160px">
+                  <defs>
+                     <linearGradient id="GradientColor">
+                        <stop offset="0%" stop-color="#f44336" />
+                        <stop offset="100%" stop-color="#ff004f" />
+                     </linearGradient>
+                  </defs>
+                  <circle  id="py" cx="80" cy="80" r="70" stroke-linecap="round" />
+          </svg>
+          
+          </div>
+          <div class="skill">
+              <!-- add my own shit here  -->
+              <div class="outer">
+                  <div class="inner">
+                      <div id="sql">
+                       
+                      </div>
+                  </div>
+                  <div class="type">
+                      SQL
+                  </div>
+              </div>
+              
+              <svg  xmlns="http://www.w3.org/2000/svg" version="1.1" width="160px" height="160px">
+                  <defs>
+                     <linearGradient id="GradientColor">
+                        <stop offset="0%" stop-color="#e91e63" />
+                        <stop offset="100%" stop-color="#673ab7" />
+                     </linearGradient>
+                  </defs>
+                  <circle id="SQL" cx="80" cy="80" r="70" stroke-linecap="round" />
+          </svg>
+          
+          </div>
+          <div class="skill">
+              <!-- add my own shit here  -->
+              <div class="outer">
+                  <div class="inner">
+                      <div id="php">
+                       
+                      </div>
+                  </div>
+                  <div class="type">
+                      PHP
+                  </div>
+              </div>
+           
+              <svg  xmlns="http://www.w3.org/2000/svg" version="1.1" width="160px" height="160px">
+                  <defs>
+                     <linearGradient id="GradientColor">
+                        <stop offset="0%" stop-color="#e91e63" />
+                        <stop offset="100%" stop-color="#673ab7" />
+                     </linearGradient>
+                  </defs>
+                  <circle id="PHP" cx="80" cy="80" r="70" stroke-linecap="round" />
+          </svg>
+          
+          </div>
+          <div class="skill">
+              <!-- add my own shit here  -->
+              <div class="outer">
+                  <div class="inner">
+                      <div id="html">
+                       
+                      </div>
+                  </div>
+                  <div class="type">
+                      HTML
+                  </div>
+              </div>
+              
+              <svg  xmlns="http://www.w3.org/2000/svg" version="1.1" width="160px" height="160px">
+                  <defs>
+                     <linearGradient id="GradientColor">
+                        <stop offset="0%" stop-color="#e91e63" />
+                        <stop offset="100%" stop-color="#673ab7" />
+                     </linearGradient>
+                  </defs>
+                  <circle id="HTML" cx="80" cy="80" r="70" stroke-linecap="round" />
+          </svg>
+          
+          </div>
+          <div class="skill">
+              <!-- add my own shit here  -->
+              <div class="outer">
+                  <div class="inner">
+                      <div id="css">
+                       
+                      </div>
+                  </div>
+                  <div class="type">
+                      CSS
+                  </div>
+              </div>
+             
+              <svg  xmlns="http://www.w3.org/2000/svg" version="1.1" width="160px" height="160px">
+                  <defs>
+                     <linearGradient id="GradientColor">
+                        <stop offset="0%" stop-color="#e91e63" />
+                        <stop offset="100%" stop-color="#673ab7" />
+                     </linearGradient>
+                  </defs>
+                  <circle id="CSS" cx="80" cy="80" r="70" stroke-linecap="round" />
+          </svg>
+          
+          </div>
+          <div class="skill">
+              <!-- add my own shit here  -->
+              <div class="outer">
+                  <div class="inner">
+                      <div id="javascript">
+                       
+                      </div>
+                  </div>
+                  <div class="type">
+                      JAVASCRIPT
+                  </div>
+              </div>
+             
+              <svg  xmlns="http://www.w3.org/2000/svg" version="1.1" width="160px" height="160px">
+                  <defs>
+                     <linearGradient id="GradientColor">
+                        <stop offset="0%" stop-color="#e91e63" />
+                        <stop offset="100%" stop-color="#673ab7" />
+                     </linearGradient>
+                  </defs>
+                  <circle id="JAVASCRIPT" cx="80" cy="80" r="70" stroke-linecap="round" />
+          </svg>
+          
+          </div>
+          </div>
+          
+          <div class="tab-contents" id="Education">
+              <!-- add my own shit here  -->
+              <article class="edu">
+                  <div class="date">
+                      <p>2022 - Present</p>
+                  </div>
+                  <h2 class="loc">Singapore Management University</h2>
+                  <p>Bachelor of Science (Information Technology)</p>
+              </article>
+              <article class="edu">
+                  <div class="date">
+                      <p>2018 - 2019</p>
+                  </div>
+                  <h2 class="loc">St. Andrew's Junior College</h2>
+                  <p>A' Levels</p>
+              </article>
+          </div>
+          <div class="tab-contents" id="Achievements">
+              <!-- add my own shit here  -->
+              <article class="edu">
+                  
+                  <h2 class="loc1">St. Andrew's Junior College</h2>
+                  <ul>
+                      <li>Commendation Award 2018</li>
+                      <li>Commendation Award 2019</li>
+                      
+                  </ul>
+              </article>
+              <article class="edu">
+                 
+                  <h2 class="loc1">Newtown Secondary School</h2>
+                  <ul>
+                      <li>Edusave Award for Achievement, Good Leadership, and Service (EAGLES) 2016</li>
+                  </ul>
+              </article>
+              <article class="edu">
+                 
+                  <h2 class="loc1">Edusave Awards</h2>
+                  <ul>
+                      <li> Edusave Certificate of Academic Achievement 2019</li>
+                      <li> Edusave Scholarship 2017 </li>
+                      <li> Edusave Character Award 2017</li>
+                      <li> Edusave Scholarship 2016</li>
+                      <li> Edusave Scholarship 2015</li>
+                      <li> Edusave Character Award 2015</li>
+                      <li> Edusave Scholarship 2014</li>
+                   
+                      
+                      
+                  </ul>
+              </article>
+          </div>
+      </div>
+  </div>
+</section>
+<section id="exp">
+  <div class="container">
+      <div class="top-section">
+      <h1>My Experience</h1> 
+      
+
+      </div>
+      <div class="timeline ">
+          <div class="line"></div>
+              <div class="section">
+                  <div class="bead"></div>
+                  <div class="content">
+                      <div class="date">
+                          <p>Nov 2017 - Dec 2017</p>
+                      </div>
+                      <h2 class="loc">Yole</h2>
+                      <p><b>Promoter</b></p>
+                      <ul>
+                          <li>Promoted the grand opening of Yole to many people</li>
+                          <li>Direct contact with customers to provide service and information about Yole while maintaining good interpersonal relations</li>
+                          <li>Influenced customers using public speaking skills to introduce Yole and showed ability to work under pressure</li>
+                      </ul>
+
+                  </div>
+                  
+              </div>
+              <div class="section">
+                  <div class="bead"></div>
+                      <div class="content">
+                          <div class="date">
+                              <p>Aug 2020 - Nov 2021</p>
+                          </div>
+                          <h2 class="loc">Changi Air Base</h2>
+                          <p><b>Guard Commander</b></p>
+                          <ul>
+                              <li>Headed a team of soldiers to protect the key installations of the base</li>
+                              <li>Equipped the team with the necessary skills to mitigate conflict and perform search and arrest</li>
+                              <li>Collaborated with my superiors to ensure smooth flow of events</li>
+                              <li>Conducted thorough checks of documents with my team in preparation of audits</li>
+                              <li>Used Microsoft Excel extensively and performed various operations within Excel</li>
+                              
+                          </ul>
+                      </div>
+                  
+
+              </div>
+              <div class="section">
+                  <div class="bead"></div>
+                  <div class="content">
+                      <div class="date">
+                          <p>Nov 2021 - Dec 2021</p>
+                      </div>
+                      <h2 class="loc">Pantheon Education Center</h2>
+                      <p><b>Teaching Assitant</b></p>
+                      <ul>
+                          <li>Provided essential support to the primary teacher, creating a positive learning environment and assisting students' academic needs.</li>
+                          <li>Skillfully managed the classroom, ensuring discipline and order, allowing the primary teacher to deliver lessons effectively.</li>
+                          <li>Offered personalized guidance to students, helping them understand challenging concepts and improve their academic performance.</li>
+                          <li>Assisted in grading assignments, tests, and assessments, maintaining accurate records and providing constructive feedback on students' progress.</li>
+                      </ul>
+                  </div>
+                  
+
+              </div>
+              <div class="section">
+                  <div class="bead"></div>
+                  <div class="content">
+                      <div class="date">
+                          <p>Jan 2022 - Mar 2022</p>
+                      </div>
+                      <h2 class="loc">Flex LTD</h2>
+                      <p><b>Manufacturing Engineer Assistant</b></p>
+                      <ul>
+                          <li>Engineered electronic products for various clients</li>
+                          <li>Managed a large inventory on their company inventory management system</li>
+                          <li>Collaborated with my team on projects and did testing for various prototypes</li>
+                      </ul>
+                  </div>
+                  
+
+              </div>
+          
+      </div>
+  </div>    
+</section>
+<section class="projects" id="projects">
+    <img class="proback" src="images/projects.png">
+  <div class="intro">
+    <h1>My Projects</h1>
+  </div>
+  <div class="containers" id="con">
+    <div class="swiper Slider-container" id="stage1">
+      <div class="swiper-wrapper" id="stage2">
+        <div class="swiper-slide img1" id="stage3">
+          
+          <div class="desc">
+            <h3>Tuition Telegram Bot</h3>
+            <p>It is a telegram bot that will help freelance tutors apply for tuition jobs across all the different tuition platforms automatically.</p>
+            <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+        </div>
+        </div>
+        <div class="swiper-slide img2" id="stage4">
+          <div class="desc">
+            <h3>FOMO</h3>
+            <p>An app that connects and guides people to their next best adventure.</p>
+            <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+        </div>
+        </div>
+        
+        
+      </div>
+    </div>
+  
+  </div>
+</section>
+<section id="contact">
+  <div class="containercontact">
+      <div class="row">
+          <div class="contact-left">
+              <h1 class="sub-title">Contact Me</h1>
+              <a href="mailto:kumaraguru@gmail.com" class="email"><i class="fa-regular fa-envelope"></i> kumaraguru818@gmail.com</a>
+              <p><i class="fa-solid fa-square-phone"></i> (+65) 91151041</p>
+              <div class="social-icons">
+                  <a href="https://t.me/guruboy" target="_blank"><i class="fa-brands fa-telegram"></i></a>
+                  <a href="https://wa.me/+6591151041" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
+                  <a href="https://www.linkedin.com/in/kumara-gurus/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+              </div>
+              <a href="images/Resume_kumaraguru.pdf" download class="btn btn2">Download CV</a>
+          </div>
+          <div class="contact-right">
+              <form name="submit-to-google-sheet">
+                  <input type="text" placeholder="Name" name="Name" required>
+                  <input type="email" placeholder="Email" name="Email" required>
+                  <textarea placeholder="Message"  rows="6"name="Message" ></textarea>
+                  <button type="submit" class="btn btn2">Submit</button>
+              </form>
+              <span id="msg"></span>
+          </div>
+      </div>
+  </div>
+  <footer class="copyright ">
+      <p>Copyright <span>&#169;</span> Guru.</p>
+  </footer>
+</section>
+<script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+<script src="main.js"></script>
+<script src="project.js"></script>
+<script src="timeline.js"></script>
+<script src="screen.js"></script>
+<script src="nav.js"></script>
+<script src="load.js"></script>
+<script src="contact.js"></script>
+<script src="scrolltop.js"></script>
+
+
+
+  </body>
+</html>
