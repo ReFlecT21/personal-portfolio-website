@@ -1,5 +1,5 @@
 let width=screen.width;
-if(width>=2000){
+if(width>=600){
   var swiper = new Swiper('.Slider-container', {
     effect: 'cards',
     grabCursor: true,
@@ -7,7 +7,7 @@ if(width>=2000){
     loop: true,
   });
 }
-if (width<2000){
+if (width<600){
 
   const con=document.getElementById("con");
   const stage1=document.getElementById("stage1");
