@@ -1088,7 +1088,10 @@ text-align: center;
 .img2{
     background-image:url(images/FOMO.jpg)
 }
-
+.wip{
+   padding-top:1rem;
+   color:rgb(9, 207, 9);
+}
 /* -------------- contact --------------------- */
 .row{
    display:flex;
