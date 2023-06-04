@@ -51,8 +51,8 @@
   --m-auto: 0 auto;
 }
 
-html {
-  
+html,body {
+  overflow-x:hidden;
   scroll-behavior: smooth;
 }
 #scrollToTopBtn {
@@ -120,7 +120,7 @@ html {
 body {
   background:#262626;
   color:#fff;
-  overflow-x: hidden;
+  position: relative;
 }
 
 .containers {
