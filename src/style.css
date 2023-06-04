@@ -1267,7 +1267,7 @@ label{
    display:none;
 }
 @media only screen and (max-width:950px){
-   #home{
+   #home::before{
        width:100%;
        height: 100vh;
        background: url(images/header1\(768px\).png) no-repeat  bottom center;
@@ -1278,7 +1278,7 @@ label{
        
        
    }
-   .header-text.active{
+   .header-text{
        padding-top:40%;
    }
   
@@ -1338,7 +1338,7 @@ label{
    .logo{
        z-index: 1;
    }
-   .header-text.active{
+   .header-text{
        z-index:-1;
    }
 
@@ -1393,7 +1393,7 @@ label{
 
 }
 @media only screen and (max-width:800px) and (orientation:landscape){
-.header-text.active{
+.header-text{
    padding-top:8%;
    
 }
@@ -1403,7 +1403,7 @@ label{
 .intro h1{
    font-size:2rem;
 }
-#home{
+#home::before{
    width:100%;
    height: 100vh;
    background: url(images/header1\(768px\ ls\).png) no-repeat  bottom center;
@@ -1415,7 +1415,7 @@ label{
    
 }
 
-.header-text.active h1{
+.header-text h1{
    font-size:3rem;
 }
 .hello{
@@ -1546,7 +1546,7 @@ svg{
 
 }
 @media only screen and (max-width:600px){
-   .header-text.active{
+   .header-text{
        z-index:0;
        padding-top:70%;
        
@@ -1562,7 +1562,7 @@ svg{
        max-width:500px;
        margin-left:10%;
    }
-   #home{
+   #home::before{
        width:100%;
        height: 100vh;
        background: url(images/header1\(600px\ p\).png) no-repeat  bottom center;
@@ -1574,7 +1574,7 @@ svg{
        
    }
 
-   .header-text.active h1{
+   .header-text h1{
        font-size:3rem;
    }
    .hello{
