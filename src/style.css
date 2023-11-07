@@ -300,6 +300,16 @@ nav ul li a:hover::after{
    justify-content: space-between;
   
 }
+.header-btn-download{
+   padding-top:5rem;
+   position:absolute; 
+   
+   display:flex;
+   gap:20px;
+   flex-wrap:wrap;
+   justify-content: space-between;
+  
+}
 
 .header-text h1{
    font-size:6rem;
@@ -679,7 +689,7 @@ svg{
 }
 @keyframes anim5{
    100%{
-       stroke-dashoffset: 400;
+       stroke-dashoffset: 130;
    }
 }
 .tab-contents{
@@ -1219,7 +1229,9 @@ form .btn2{
        font-size:2rem;
        
    }
-
+   .header-btn-download{
+      padding-top: 4rem;
+   }
   
    .btn{
        padding:7px 25px;
