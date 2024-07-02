@@ -180,7 +180,14 @@ body {
       opacity: 1;
    }
 }
-
+.custom-link, .custom-link:visited {
+   text-decoration: none; /* Removes underline */
+   color: inherit; /* Inherits the color from the parent element, removing the default blue */
+ }
+ 
+ .custom-link:hover, .custom-link:focus {
+   text-decoration: underline; /* Optional: Adds underline on hover/focus for better accessibility */
+ }
 
 .back {
    
@@ -1093,11 +1100,12 @@ text-align: center;
    height:300%;
 }
 .img1{
-    background-image:url(images/project1.jpeg)
+    background-image:url(images/project2.png)
 }
 .img2{
     background-image:url(images/FOMO.jpg)
 }
+
 .wip{
    padding-top:1rem;
    color:rgb(9, 207, 9);
@@ -1176,6 +1184,23 @@ margin-top:30px;
 display: inline-block;
 background: #f44336;
 border:none;
+}
+.btn3 {
+   background: #000;
+   border-color: #fff;
+   /* The rest of the properties from .btn to ensure consistency */
+   display: block;
+   width: fit-content;
+   border: 1px solid #fff;
+   padding: 14px 50px;
+   border-radius: 6px;
+   text-decoration: none;
+   color: #fff;
+   transition: background 0.5s;
+ }
+.btn3:hover {
+   background: #555; /* Change to your desired hover background color */
+   cursor: pointer; /* Changes the cursor to a pointer to indicate it's clickable */
 }
 .email{
    text-decoration: none;
